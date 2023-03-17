@@ -12,5 +12,6 @@ public class aSimpleNGTest extends BaseTestNGTest {
   @Test
   public void successfulMethod() {
     $("h1").shouldBe(visible).shouldHave(text("Selenide"));
+    $("h1").ancestor("body").shouldHave(text("Selenide"));
   }
 }
