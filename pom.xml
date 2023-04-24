@@ -42,7 +42,7 @@
     <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide-testng</artifactId>
-      <version>6.13.0</version>
+      <version>6.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
