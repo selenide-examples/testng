@@ -10,12 +10,12 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 @Listeners(SoftAsserts.class)
-public abstract class AbstractSoftAssertTestNGTest {
+abstract class AbstractSoftAssertTestNGTest {
   @BeforeMethod
   final void openBrowser() {
     closeWebDriver();
     Configuration.assertionMode = SOFT;
     Configuration.timeout = 1;
-    open("https://google.com/ncr");
+    open("https://selenide.org/users.html");
   }
 }

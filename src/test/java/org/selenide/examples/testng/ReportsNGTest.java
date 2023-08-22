@@ -22,12 +22,11 @@ public class ReportsNGTest extends BaseTestNGTest {
 
   @Test
   public void successfulMethod() {
-    $("h1").shouldBe(visible);
+    $("#user-tags .reset-filter").shouldBe(visible);
   }
 
   @Test
   public void reportingCollections() {
-    $$("h1").shouldHave(sizeGreaterThan(1));
-    $$("h2").shouldHave(sizeGreaterThanOrEqual(1));
+    $$("#user-tags .tag").shouldHave(sizeGreaterThan(5));
   }
 }

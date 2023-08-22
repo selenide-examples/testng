@@ -22,11 +22,11 @@ abstract class BaseTestNGTest {
   public void setUp() {
     Configuration.timeout = 1;
     Configuration.assertionMode = STRICT;
-    open("https://google.com/ncr");
+    open("https://selenide.org/users.html");
   }
 
   @AfterClass
-  private final void finishTestClass() {
+  final void finishTestClass() {
     log.info("Finished {} TestNG tests in {}", getClass().getName(), Configuration.browser);
   }
 }
